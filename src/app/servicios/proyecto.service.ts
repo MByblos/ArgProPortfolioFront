@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProyectoService {
-  url: string = 'http://localhost:8080/'
+  url: string = 'https://portfoliomrback.herokuapp.com/'
   proyId: number;
   constructor(private http:HttpClient) {
   }

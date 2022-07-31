@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  url: string = 'http://localhost:8080/'
+  url: string = 'https://portfoliomrback.herokuapp.com/'
   expId: number;
   constructor(private http:HttpClient) {
   }

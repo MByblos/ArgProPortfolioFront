@@ -1,0 +1,46 @@
+<app-menu></app-menu>
+<div class="container justify-content-center">
+  <div class="card">
+    <div class="card-header">
+        <h2>Datos Personales</h2>
+    </div>
+  </div>
+  <div class="form-group">
+    <form>
+      <div class="mb-3">
+        <label for="personaNombre" class="form-label">Nombre y Apellido</label>
+        <input [(ngModel)]="persona.nombre" type="text" class="form-control" id="personaNombre" name="personaNombre">
+      </div>
+      <div class="mb-3">
+        <label for="personaCargo" class="form-label">Profesión</label>
+        <input [(ngModel)]="persona.cargo" type="text" class="form-control" id="personaCargo" name="personaCargo">
+      </div>
+      <div class="mb-3">
+        <label for="personaCiudad" class="form-label">Ciudad de residencia</label>
+        <input [(ngModel)]="persona.ciudad" type="text" class="form-control" id="personaCiudad" name="personaCiudad">
+      </div>
+      <div class="mb-3">
+        <label for="personaTelefono" class="form-label">Teléfono</label>
+        <input [(ngModel)]="persona.telefono" type="number" class="form-control" id="personaTelefono" name="personaTelefono">
+      </div>
+      <div class="mb-3">
+        <label for="personaEmail" class="form-label">Email</label>
+        <input [(ngModel)]="persona.mail" type="text" class="form-control" id="personaEmail" name="personaEmail">
+      </div>
+      <div class="mb-3">
+        <label for="personaDescripcion" class="form-label">Breve presentación</label>
+        <input [(ngModel)]="persona.descripcion" type="text" class="form-control" id="personaDescripcion" name="personaDescripcion">
+      </div>
+      <div class="mb-3">
+        <label for="personaFotoPerfil" class="form-label">Url de su foto de Perfil</label>
+        <input [(ngModel)]="persona.imgURL" type="text" class="form-control" id="personaFotoPerfil" name="personaFotoPerfil">
+      </div>
+      <div class="mb-3">
+        <label for="personaBanner" class="form-label">Url de su banner</label>
+        <input [(ngModel)]="persona.background" type="text" class="form-control" id="personaBanner" name="personaBanner">
+      </div>
+      <button (click)="guardarPersona()" class="btn btn-primary">Guardar</button>
+      <button (click)="cancelar()" class="btn btn-danger">Cancelar</button>
+    </form>
+  </div>
+</div>

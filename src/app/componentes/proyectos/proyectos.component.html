@@ -1,0 +1,37 @@
+<div class="card mat-card">
+    <div class="car-title">
+        <h2>Proyectos</h2>
+        <div class="btn-edit">
+            <a routerLink="nuevo/proyecto" class="btn-right">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <ul class="items-list">
+            <li *ngFor="let proyecto of proyectoData">
+                <div class="data-container">
+                    <a href="#">
+                        <div class="logo-image-container"></div>
+                        <div class="list-info">
+                            <h3>{{proyecto.proyNombre}}</h3>
+                            <h4>{{proyecto.proyDescripcion}}</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="data-control">
+                    <div class="btn-edit">
+                        <a routerLink="editar/proyecto/{{proyecto.proyId}}" class="btn-right">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                    </div>
+                    <div class="btn-delete">
+                        <a (click)="eliminar(proyecto.proyId)" class="btn-right">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

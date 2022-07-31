@@ -1,0 +1,38 @@
+<div class="card mat-card">
+    <div class="car-title">
+        <h2>Formación Académica</h2>
+        <div class="btn-edit">
+            <a routerLink="nuevo/estudio" class="btn-right">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <ul class="items-list">
+            <li *ngFor="let educacion of estudioData" id="estudio-item">
+                <div class="data-container">
+                    <a href="#" >
+                        <div class="logo-image-container"></div>
+                        <div class="list-info">
+                            <h3>{{educacion.carrera}}</h3>
+                            <h4>{{educacion.institucion}}</h4>
+                            <p><time>{{educacion.estFechaIni}}</time> - <time>{{educacion.estFechaFin}}</time></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="data-control">
+                    <div class="btn-edit btn-success">
+                        <a routerLink="editar/estudio/{{educacion.estId}}" class="btn-right">
+                            <i class="fa fa-pen" ></i>
+                        </a>
+                    </div>
+                    <div class="btn-delete">
+                        <a (click)="eliminar(educacion.estId)" class="btn-right">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

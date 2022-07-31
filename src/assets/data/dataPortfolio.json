@@ -1,0 +1,72 @@
+{
+	"informacion": {
+        "nombre": "Llamaracio Andino",
+	    "cargo": "Programador",
+        "ciudad": "Cordillera"
+    },
+	"acercaDe": {
+		"contenido": "Soy un mamífero artiodáctilo doméstico de la familia Camelidae, abundante en la Puna o Altiplano de los Andes de Perú, Bolivia, Chile, Ecuador, Argentina​ y Colombia."
+	},
+	"estudios": [{
+			"carrera": "historia",
+			"institucion": "Universidad Nacional de Salta",
+			"anioInicio": 2010,
+			"anioFin": 2017
+		},
+		{
+			"carrera": "diplomatura en derecho animal",
+			"institucion": "Universidad Nacional de Cuyo",
+			"anioInicio": 2017,
+			"anioFin": 2018
+		},
+		{
+			"carrera": "desarrollo de bases de datos",
+			"institucion": "oracle",
+			"anioInicio": 2017,
+			"anioFin": 2018
+		}
+	],
+	"habilidades": [{
+			"habilidad": "ingles",
+			"nivel": "avanzado"
+		},
+		{
+			"habilidad": "yoga",
+			"nivel": "intermedio"
+		}
+	],
+	"experiencias": [{
+			"trabajo": "propaganda telecom",
+			"funcion": "actor de publicidad",
+			"fechaInicio": 2000,
+			"fechafin": 2001
+		},
+		{
+			"trabajo": "Lanas de la abuela",
+			"funcion": "modelo",
+			"fechaInicio": 2005,
+			"fechafin": 2005
+		},
+		{
+			"trabajo": "Yerbas de la cierra",
+			"funcion": "selector de hierbas",
+			"fechaInicio": 2006,
+			"fechafin": 2010
+		}
+	],
+	"proyectos": [{
+			"proyecto": "desarrollo web",
+			"descripcion": "desarollo de una aplicacion web personal",
+			"herramientas": [{
+					"herramienta": "NetBeans"
+				},
+				{
+					"herramienta": "SpringBoot"
+				},
+				{
+					"herramienta": "angular"
+				}
+			]
+		}
+	]
+}

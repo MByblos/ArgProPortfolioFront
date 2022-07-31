@@ -1,0 +1,34 @@
+<app-menu></app-menu>
+<div class="container justify-content-center">
+  <div class="card">
+    <div class="card-header">
+        <h2>Experiencia</h2>
+    </div>
+  </div>
+  <div class="form-group">
+    <form>
+      <div class="mb-3">
+        <label for="experienciaEmpresa" class="form-label">Empresa</label>
+        <input [(ngModel)]="experiencia.expEmpresa" type="text" class="form-control" id="experienciaEmpresa" name="experienciaEmpresa">
+      </div>
+      <div class="mb-3">
+        <label for="experienciaDescripcion" class="form-label">Descripción</label>
+        <input [(ngModel)]="experiencia.expDescripcion" type="text" class="form-control" id="experienciaDescripcion" name="experienciaDescripcion">
+      </div>
+      <div class="mb-3">
+        <label for="experienciaFechaIni" class="form-label">Año de Inicio</label>
+        <input [(ngModel)]="experiencia.expFechaIni" type="number" class="form-control" id="experienciaFechaIni" name="experienciaFechaIni">
+      </div>
+      <div class="mb-3">
+        <label for="experienciaFechaFin" class="form-label">Fecha de Finalización</label>
+        <input [(ngModel)]="experiencia.expFechaFin" type="number" class="form-control" id="experienciaFechaFin" name="experienciaFechaFin">
+      </div>
+      <div class="mb-3">
+        <label for="experienciaEstado" class="form-label">Estado actual</label>
+        <input [(ngModel)]="experiencia.expEstado" type="text" class="form-control" id="experienciaEstado" name="experienciaEstado">
+      </div>
+      <button (click)="guardarExperiencia()" class="btn btn-primary">Guardar</button>
+      <button (click)="cancelar()" class="btn btn-danger">Cancelar</button>
+    </form>
+  </div>
+</div>

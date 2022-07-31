@@ -1,0 +1,36 @@
+
+<div class="card mat-card" id="encabezado">
+    <div id="profile-background">
+        <img
+            [src]="info[0].background"
+        />
+    </div>
+    <div id="info" style="padding: 16px">
+        <div id="info-img">
+            <img
+                class="profile-image"
+                [src]="info[0].imgURL"
+            />
+            <div class="btn-edit">
+                <a routerLink="editar/persona/{{info[0].id}}" class="btn-right"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
+        <div id="info-data">
+            <div>
+                <h1>{{info[0].nombre}}</h1>
+                <div id="info-company">{{info[0].cargo}}</div>
+                <div id="info-contact">
+                    <span>{{info[0].ciudad}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-3">
+        <div class="car-title">
+            <h4>Sobre mi</h4>
+        </div>
+        <div class="mb-5">
+            <p id="text-acercade">{{info[0].descripcion}}</p>
+        </div>
+    </div>
+</div>

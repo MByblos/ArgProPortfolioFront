@@ -1,1 +1,207 @@
-/* You can add global styles to this file, and also import other style files */
+/*Estilos*/
+
+/*Estilo general de las cartas*/
+
+
+.mat-card {
+  border-radius: 32px;
+  margin: 30px 10%;
+  padding: 10px;
+  border: 10px;
+}
+
+body{
+  background-color: #84AFE6;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Estilo de la primera carta*/
+
+.mat-card#encabezado {
+    padding: 0; 
+}
+
+  /*Imagenes de la primera carta*/
+    /*Imagen Fondo*/
+div#profile-background {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  max-height: 600px;
+
+}
+
+div#profile-background img {
+  width: 100%;
+  border-radius: 32px 32px 0 0;
+}
+
+div#info-img {
+  display: flex;
+}
+
+    /*Imagen Perfil*/
+.profile-image {
+  position: relative;
+  border-radius: 50%;
+  width: 152px;
+  height: 152px;
+  margin-top: -110px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+  /*Botones y contacto*/
+div#info-actions {
+  display: flex;
+}
+
+div#info-actions button {
+  margin-right: 8px;
+}
+
+div#info-contact span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+div#info-contact span a {
+  touch-action: manipulation;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+  /*Contenido primera carta*/
+div#info-company {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+div#info-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#info-data h1 {
+  font-size: 1.8rem;
+  display: inline;
+  font-weight: 500;
+  line-height: 1.25;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
+.car-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*Listas*/
+
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+
+}
+
+li:before {
+  content: "";
+  margin-left: -20px;
+  border-color: transparent rgb(3, 3, 3);
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  position: relative;
+  top: 20%;
+
+}
+
+li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1px 1fr 20px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+/*Estilo de los elementos de las listas*/
+
+li#estudio-item {
+  border: 1px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  background-color: rgb(215, 226, 212);
+  border-radius: 10px;
+}
+
+/*Contenido de los elementos de las listas*/
+
+.list-info{
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline;
+  font-weight: 50;
+  line-height: 1.25;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.list-info h4 {
+  font-size: 1.4rem;
+  color: rgb(105,105,105);
+}
+
+.list-info h3 {
+  font-size: 1.8rem;
+  color: rgb(22, 27, 31);
+}
+
+.list-info p {
+  color: rgb(22, 27, 31);
+}
+/*Botones de editar y borrar en listas*/
+
+.data-control {
+  padding-top: 0.2in;
+  margin-left: 25px;
+}
+
+.btn-edit{
+  margin-bottom: 0.2in;
+}
+
+.data-control#btn-delete{
+  margin-bottom: 0.2in;
+}
+
+/*
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+
+  content: "";
+  margin-left: -20px;
+  border-color: transparent rgb(3, 3, 3);
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+
+}*/

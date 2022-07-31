@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HabilidadService {
-  url: string = 'http://localhost:8080/'
+  url: string = 'https://portfoliomrback.herokuapp.com/'
   habId: number;
   constructor(private http:HttpClient) {
   }

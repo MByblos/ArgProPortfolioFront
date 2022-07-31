@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 
 export class EstudioService {
-  url: string = 'http://localhost:8080/'
+  url: string = 'https://portfoliomrback.herokuapp.com/'
   estId: number;
   constructor(private http:HttpClient) {
   }

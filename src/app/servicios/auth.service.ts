@@ -12,7 +12,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
 })
 export class AuthService {
 
-  private authURL = 'http://localhost:8080/auth/';
+  private authURL = 'https://portfoliomrback.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
